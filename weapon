@@ -1,0 +1,15 @@
+public class Weapon extends Item{ //Weapon class
+  private int damage;
+  
+  public Weapon(String Name, int Weight, int Damage) { //Weapon class with appropriate strings ints
+    super(Name, Weight);
+    this.damage = Damage;
+  }
+  public int getDamage(){
+    return damage; //return damage
+  }
+  public void examine() {
+    System.out.println("Item " + super.getName() + "weighs " + super.getWeight() + "damage" + getDamage()); //what needs to be displayed
+  }
+}
+                       
