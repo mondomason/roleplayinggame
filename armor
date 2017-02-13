@@ -1,0 +1,15 @@
+public class Armor extends Item{
+  public int defense;
+  
+  public Armor(String Name, int Weight, int Defense) //public class Armor, with appropriate strings and ints 
+  {
+    super(Name, Weight); //needs super for name and weight
+    this.defense = Defense;
+  }
+  public int getDefense(){ //for getDefense, returning it
+    return defense;
+  }
+  public void examine() {
+    System.out.println("Item" + super.getName() + "weighs" + super.getWeight() + "defense" + getDefense()); //printing for appropriate factors
+  }
+}
